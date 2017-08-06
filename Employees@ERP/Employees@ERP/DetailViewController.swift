@@ -87,7 +87,6 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UISplitViewCo
         
         //Shows the Root View on iPhone
         self.view.endEditing(true)
-        self.navigationController?.navigationController?.popToRootViewController(animated: true)
     }
     
     @IBAction func saveChanges(_ sender: Any) {
@@ -185,6 +184,9 @@ class DetailViewController: UIViewController, UITextFieldDelegate, UISplitViewCo
             self.savedLabel.alpha = 0.0
         }, completion: nil)
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
+            // Handles the showDetail segue
+            self.navigationController?.navigationController?.popToRootViewController(animated: true)
+            // Handles the showDetailNew segue
             self.navigationController?.popViewController(animated: true)
         }
         

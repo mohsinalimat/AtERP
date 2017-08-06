@@ -10,6 +10,7 @@
 		F46479D31F30B5FA00E2C1E6 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46479D11F30B5FA00E2C1E6 /* Event+CoreDataClass.swift */; };
 		F46479D41F30B5FA00E2C1E6 /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46479D21F30B5FA00E2C1E6 /* Event+CoreDataProperties.swift */; };
 		F46479D81F31FB6500E2C1E6 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46479D71F31FB6500E2C1E6 /* EmployeeCell.swift */; };
+		F4DD82B81F377FE300C4476D /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DD82B71F377FE300C4476D /* SavedView.swift */; };
 		F4EB89D91F2FCF1200885649 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB89D81F2FCF1200885649 /* AppDelegate.swift */; };
 		F4EB89DC1F2FCF1200885649 /* Employees_ERP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F4EB89DA1F2FCF1200885649 /* Employees_ERP.xcdatamodeld */; };
 		F4EB89DE1F2FCF1200885649 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EB89DD1F2FCF1200885649 /* MasterViewController.swift */; };
@@ -25,6 +26,8 @@
 		F46479D11F30B5FA00E2C1E6 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F46479D21F30B5FA00E2C1E6 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F46479D71F31FB6500E2C1E6 /* EmployeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		F4DD82B71F377FE300C4476D /* SavedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
+		F4DD82B91F378DBB00C4476D /* Employees@ERP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Employees@ERP.entitlements"; sourceTree = "<group>"; };
 		F4EB89D51F2FCF1200885649 /* Employees@ERP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Employees@ERP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4EB89D81F2FCF1200885649 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F4EB89DB1F2FCF1200885649 /* Employees_ERP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Employees_ERP.xcdatamodel; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		F4EB89D71F2FCF1200885649 /* Employees@ERP */ = {
 			isa = PBXGroup;
 			children = (
+				F4DD82B91F378DBB00C4476D /* Employees@ERP.entitlements */,
 				F4EB89F51F2FCFFB00885649 /* Model */,
 				F4EB89F41F2FCFF800885649 /* View */,
 				F4EB89F31F2FCFF500885649 /* Controller */,
@@ -96,6 +100,7 @@
 				F4F15FB41F374E8B00471E14 /* MaterialView.swift */,
 				F4F15FB21F374E8000471E14 /* TextFieldView.swift */,
 				F46479D71F31FB6500E2C1E6 /* EmployeeCell.swift */,
+				F4DD82B71F377FE300C4476D /* SavedView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -151,6 +156,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = KUPZ8W8CSU;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -196,6 +206,7 @@
 				F4EB89DC1F2FCF1200885649 /* Employees_ERP.xcdatamodeld in Sources */,
 				F4F15FB51F374E8B00471E14 /* MaterialView.swift in Sources */,
 				F46479D31F30B5FA00E2C1E6 /* Event+CoreDataClass.swift in Sources */,
+				F4DD82B81F377FE300C4476D /* SavedView.swift in Sources */,
 				F4EB89DE1F2FCF1200885649 /* MasterViewController.swift in Sources */,
 				F4F15FB31F374E8000471E14 /* TextFieldView.swift in Sources */,
 				F4EB89E01F2FCF1200885649 /* DetailViewController.swift in Sources */,
@@ -323,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Employees@ERP/Employees@ERP.entitlements";
 				DEVELOPMENT_TEAM = KUPZ8W8CSU;
 				INFOPLIST_FILE = "Employees@ERP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -336,6 +348,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Employees@ERP/Employees@ERP.entitlements";
 				DEVELOPMENT_TEAM = KUPZ8W8CSU;
 				INFOPLIST_FILE = "Employees@ERP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

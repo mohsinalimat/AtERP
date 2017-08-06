@@ -453,6 +453,36 @@
                                     </mask>
                                 </variation>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Saved" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="110" translatesAutoresizingMaskIntoConstraints="NO" id="6sW-dT-8ho">
+                                <rect key="frame" x="90" y="243" width="140" height="90"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="90" id="sD4-RY-3lH"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="140" id="yrh-Ef-eZI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="savedDesign" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✔︎" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="110" translatesAutoresizingMaskIntoConstraints="NO" id="qAV-to-VAb" userLabel="tick">
+                                <rect key="frame" x="181" y="268" width="36.5" height="40"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="3zf-K1-IKS"/>
+                                    <constraint firstAttribute="width" constant="36.5" id="rlZ-4R-QJq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qme-N6-iLx">
                                 <rect key="frame" x="16" y="412" width="288" height="40"/>
                                 <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
@@ -501,30 +531,6 @@
                                     <action selector="saveChanges:" destination="JEX-9P-axG" eventType="touchUpInside" id="DCB-TM-cxQ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Saved" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="110" translatesAutoresizingMaskIntoConstraints="NO" id="6sW-dT-8ho">
-                                <rect key="frame" x="123" y="269" width="74.5" height="30"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="NO"/>
-                                </userDefinedRuntimeAttributes>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="✔︎" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="110" translatesAutoresizingMaskIntoConstraints="NO" id="qAV-to-VAb" userLabel="tick">
-                                <rect key="frame" x="197.5" y="264" width="36.5" height="40"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="3zf-K1-IKS"/>
-                                    <constraint firstAttribute="width" constant="36.5" id="rlZ-4R-QJq"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="43"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="boolean" keyPath="materialDesign" value="NO"/>
-                                </userDefinedRuntimeAttributes>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -573,7 +579,7 @@
                             <constraint firstAttribute="trailing" secondItem="nfe-mY-Txx" secondAttribute="trailing" constant="24" id="W2h-7y-gCW"/>
                             <constraint firstItem="w4q-UD-cRd" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="W7U-HP-Bbw"/>
                             <constraint firstItem="Qme-N6-iLx" firstAttribute="top" secondItem="w4q-UD-cRd" secondAttribute="bottom" constant="8" id="Wtm-s9-4wT"/>
-                            <constraint firstItem="qAV-to-VAb" firstAttribute="leading" secondItem="6sW-dT-8ho" secondAttribute="trailing" id="XFj-tr-FvE"/>
+                            <constraint firstItem="qAV-to-VAb" firstAttribute="leading" secondItem="6sW-dT-8ho" secondAttribute="trailing" constant="-49" id="XFj-tr-FvE"/>
                             <constraint firstItem="APm-1E-JE2" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="8" id="XMb-Lb-t4R"/>
                             <constraint firstAttribute="trailing" secondItem="Qme-N6-iLx" secondAttribute="trailing" constant="8" id="Xib-Ru-uyA"/>
                             <constraint firstItem="WLt-G4-CFb" firstAttribute="top" secondItem="YGH-QM-xII" secondAttribute="bottom" constant="8" id="aSM-Dv-emc"/>
@@ -589,7 +595,7 @@
                             <constraint firstAttribute="trailing" secondItem="qsg-ME-1bW" secondAttribute="trailing" constant="8" id="enm-fu-MP3"/>
                             <constraint firstItem="APm-1E-JE2" firstAttribute="top" secondItem="SYR-Wa-9uf" secondAttribute="bottom" constant="8" id="ewu-JL-UkV"/>
                             <constraint firstItem="Qme-N6-iLx" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="f6d-1r-USi"/>
-                            <constraint firstItem="6sW-dT-8ho" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="fBM-Ej-3JF"/>
+                            <constraint firstItem="6sW-dT-8ho" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" constant="4" id="fBM-Ej-3JF"/>
                             <constraint firstItem="WLt-G4-CFb" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="fBk-7B-Trb"/>
                             <constraint firstItem="mh3-lo-ub8" firstAttribute="top" secondItem="XSl-Tb-vYu" secondAttribute="bottom" constant="8" id="fgb-5A-lOz"/>
                             <constraint firstItem="mh3-lo-ub8" firstAttribute="top" secondItem="XSl-Tb-vYu" secondAttribute="bottom" constant="8" id="gDv-z6-IWk"/>
@@ -613,13 +619,13 @@
                             <constraint firstItem="6sW-dT-8ho" firstAttribute="centerX" secondItem="svH-Pt-448" secondAttribute="centerX" id="ovr-uM-C79"/>
                             <constraint firstItem="APm-1E-JE2" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leadingMargin" id="qkc-dD-zYI"/>
                             <constraint firstItem="XSl-Tb-vYu" firstAttribute="top" secondItem="nfe-mY-Txx" secondAttribute="bottom" constant="8" id="qrG-57-1DA"/>
-                            <constraint firstItem="Qme-N6-iLx" firstAttribute="top" secondItem="w4q-UD-cRd" secondAttribute="bottom" constant="8" id="r3H-18-2Oh"/>
+                            <constraint firstItem="Qme-N6-iLx" firstAttribute="top" secondItem="w4q-UD-cRd" secondAttribute="bottom" constant="21" id="r3H-18-2Oh"/>
                             <constraint firstItem="Qme-N6-iLx" firstAttribute="top" secondItem="w4q-UD-cRd" secondAttribute="bottom" constant="8" id="rFr-xw-XAK"/>
                             <constraint firstItem="mh3-lo-ub8" firstAttribute="trailing" secondItem="svH-Pt-448" secondAttribute="trailingMargin" id="sEn-ad-rDZ"/>
                             <constraint firstItem="XSl-Tb-vYu" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="8" id="sfb-xP-K0f"/>
                             <constraint firstItem="XSl-Tb-vYu" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="8" id="tac-YH-zDt"/>
                             <constraint firstAttribute="trailing" secondItem="nfe-mY-Txx" secondAttribute="trailing" constant="8" id="upb-Cm-oiG"/>
-                            <constraint firstItem="qAV-to-VAb" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" id="v1N-8y-bbl"/>
+                            <constraint firstItem="qAV-to-VAb" firstAttribute="centerY" secondItem="svH-Pt-448" secondAttribute="centerY" constant="4" id="v1N-8y-bbl"/>
                             <constraint firstItem="w4q-UD-cRd" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="8" id="v68-Xb-cMA"/>
                             <constraint firstItem="qsg-ME-1bW" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="8" id="vCO-Mr-Osu"/>
                             <constraint firstItem="YGH-QM-xII" firstAttribute="leading" secondItem="svH-Pt-448" secondAttribute="leading" constant="24" id="vCX-HX-SRh"/>
@@ -871,7 +877,6 @@
                         <outlet property="saveChanges" destination="Qme-N6-iLx" id="9lX-f6-NI8"/>
                         <outlet property="savedLabel" destination="6sW-dT-8ho" id="0VH-UF-yaw"/>
                         <outlet property="tickLabel" destination="qAV-to-VAb" id="Lby-LQ-EFK"/>
-                        <segue destination="H1p-Uh-vWS" kind="showDetail" identifier="initial" id="Pfp-9A-zCe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FJe-Yq-33r" sceneMemberID="firstResponder"/>
@@ -916,6 +921,9 @@
                                         <segment title="Department"/>
                                     </segments>
                                     <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                    <connections>
+                                        <action selector="segmentChange:" destination="7bK-jq-Zjz" eventType="valueChanged" id="fiX-Ip-uzJ"/>
+                                    </connections>
                                 </segmentedControl>
                             </subviews>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

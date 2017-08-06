@@ -111,7 +111,17 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
         fetchRequest.fetchBatchSize = 20
         // Edit the sort key as appropriate.
         let sortDescriptor = NSSortDescriptor(key: "timestamp", ascending: false)
-        fetchRequest.sortDescriptors = [sortDescriptor]
+        let a_zSortDescriptor = NSSortDescriptor(key: "employeeLastName", ascending: true, selector: #selector(NSString.caseInsensitiveCompare))
+        let departmentSortDescriptor = NSSortDescriptor(key: "employeeDepartment", ascending: true, selector: #selector(NSString.caseInsensitiveCompare))
+        
+        if segment.selectedSegmentIndex == 0 {
+            fetchRequest.sortDescriptors = [sortDescriptor]
+        } else if segment.selectedSegmentIndex == 1 {
+            fetchRequest.sortDescriptors = [a_zSortDescriptor]
+        } else if segment.selectedSegmentIndex == 2 {
+            fetchRequest.sortDescriptors = [departmentSortDescriptor]
+        }
+        
         // Edit the section name key path and cache name if appropriate.
         // nil for section name key path means "no sections".
         let controller = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
@@ -125,6 +135,11 @@ class MasterViewController: UITableViewController, NSFetchedResultsControllerDel
             let nserror = error as NSError
             fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
         }
+    }
+    
+    @IBAction func segmentChange(_ sender: Any) {
+        attemptFetch()
+        tableView.reloadData()
     }
     
     var fetchedResultsController: NSFetchedResultsController<Event> {
