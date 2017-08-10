@@ -1051,7 +1051,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="RyU-vV-55I"/>
         <segue reference="KFn-2A-AGk"/>
+        <segue reference="RyU-vV-55I"/>
     </inferredMetricsTieBreakers>
 </document>

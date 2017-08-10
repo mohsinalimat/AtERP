@@ -71,16 +71,16 @@
 		F4EB89D71F2FCF1200885649 /* Employees@ERP */ = {
 			isa = PBXGroup;
 			children = (
-				F4DD82B91F378DBB00C4476D /* Employees@ERP.entitlements */,
 				F4EB89F51F2FCFFB00885649 /* Model */,
 				F4EB89F41F2FCFF800885649 /* View */,
 				F4EB89F31F2FCFF500885649 /* Controller */,
 				F4EB89D81F2FCF1200885649 /* AppDelegate.swift */,
 				F4EB89E11F2FCF1200885649 /* Main.storyboard */,
-				F4EB89E41F2FCF1200885649 /* Assets.xcassets */,
 				F4EB89E61F2FCF1200885649 /* LaunchScreen.storyboard */,
 				F4EB89E91F2FCF1200885649 /* Info.plist */,
 				F4EB89DA1F2FCF1200885649 /* Employees_ERP.xcdatamodeld */,
+				F4DD82B91F378DBB00C4476D /* Employees@ERP.entitlements */,
+				F4EB89E41F2FCF1200885649 /* Assets.xcassets */,
 			);
 			path = "Employees@ERP";
 			sourceTree = "<group>";
