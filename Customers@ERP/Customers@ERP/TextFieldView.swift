@@ -1,8 +1,8 @@
 //
 //  TextFieldView.swift
-//  Employees@ERP
+//  Customers@ERP
 //
-//  Created by Fotios Tragopoulos on 23/07/2017.
+//  Created by Fotios Tragopoulos on 10/08/2017.
 //  Copyright © 2017 Fotios Tragopoulos. All rights reserved.
 //
 
