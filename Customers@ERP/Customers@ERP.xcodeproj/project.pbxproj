@@ -17,7 +17,7 @@
 		F494D2C81F3CCEED00B86D92 /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494D2C61F3CCEED00B86D92 /* Event+CoreDataClass.swift */; };
 		F494D2C91F3CCEED00B86D92 /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494D2C71F3CCEED00B86D92 /* Event+CoreDataProperties.swift */; };
 		F494D2CE1F3CCFE000B86D92 /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494D2CA1F3CCFE000B86D92 /* SavedView.swift */; };
-		F494D2CF1F3CCFE000B86D92 /* EmployeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494D2CB1F3CCFE000B86D92 /* EmployeeCell.swift */; };
+		F494D2CF1F3CCFE000B86D92 /* CustomerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494D2CB1F3CCFE000B86D92 /* CustomerCell.swift */; };
 		F494D2D01F3CCFE000B86D92 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494D2CC1F3CCFE000B86D92 /* TextFieldView.swift */; };
 		F494D2D11F3CCFE000B86D92 /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F494D2CD1F3CCFE000B86D92 /* MaterialView.swift */; };
 /* End PBXBuildFile section */
@@ -36,7 +36,7 @@
 		F494D2C61F3CCEED00B86D92 /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F494D2C71F3CCEED00B86D92 /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F494D2CA1F3CCFE000B86D92 /* SavedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
-		F494D2CB1F3CCFE000B86D92 /* EmployeeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmployeeCell.swift; sourceTree = "<group>"; };
+		F494D2CB1F3CCFE000B86D92 /* CustomerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomerCell.swift; sourceTree = "<group>"; };
 		F494D2CC1F3CCFE000B86D92 /* TextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		F494D2CD1F3CCFE000B86D92 /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -98,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				F494D2CA1F3CCFE000B86D92 /* SavedView.swift */,
-				F494D2CB1F3CCFE000B86D92 /* EmployeeCell.swift */,
+				F494D2CB1F3CCFE000B86D92 /* CustomerCell.swift */,
 				F494D2CC1F3CCFE000B86D92 /* TextFieldView.swift */,
 				F494D2CD1F3CCFE000B86D92 /* MaterialView.swift */,
 			);
@@ -205,7 +205,7 @@
 				F494D2AE1F3C8E9600B86D92 /* Customers_ERP.xcdatamodeld in Sources */,
 				F494D2CE1F3CCFE000B86D92 /* SavedView.swift in Sources */,
 				F494D2C81F3CCEED00B86D92 /* Event+CoreDataClass.swift in Sources */,
-				F494D2CF1F3CCFE000B86D92 /* EmployeeCell.swift in Sources */,
+				F494D2CF1F3CCFE000B86D92 /* CustomerCell.swift in Sources */,
 				F494D2B01F3C8E9600B86D92 /* MasterViewController.swift in Sources */,
 				F494D2D11F3CCFE000B86D92 /* MaterialView.swift in Sources */,
 				F494D2B21F3C8E9600B86D92 /* DetailViewController.swift in Sources */,
@@ -377,6 +377,7 @@
 				F494D2C01F3C8E9600B86D92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

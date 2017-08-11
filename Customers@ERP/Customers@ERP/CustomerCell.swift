@@ -1,5 +1,5 @@
 //
-//  EmployeeCell.swift
+//  CustomerCell.swift
 //  Customers@ERP
 //
 //  Created by Fotios Tragopoulos on 10/08/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class EmployeeCell: UITableViewCell {
+class CustomerCell: UITableViewCell {
 
     @IBOutlet weak var nameTextField: UILabel!
     @IBOutlet weak var departmentTextField: UILabel!
