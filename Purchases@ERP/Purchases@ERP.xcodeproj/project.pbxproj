@@ -1,0 +1,398 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F45828731F4087360004E6FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45828721F4087360004E6FF /* AppDelegate.swift */; };
+		F45828761F4087360004E6FF /* Purchases_ERP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F45828741F4087360004E6FF /* Purchases_ERP.xcdatamodeld */; };
+		F45828781F4087360004E6FF /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45828771F4087360004E6FF /* MasterViewController.swift */; };
+		F458287A1F4087360004E6FF /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45828791F4087360004E6FF /* DetailViewController.swift */; };
+		F458287D1F4087360004E6FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F458287B1F4087360004E6FF /* Main.storyboard */; };
+		F458287F1F4087360004E6FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F458287E1F4087360004E6FF /* Assets.xcassets */; };
+		F45828821F4087360004E6FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F45828801F4087360004E6FF /* LaunchScreen.storyboard */; };
+		F45828901F40893C0004E6FF /* Event+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458288E1F40893C0004E6FF /* Event+CoreDataClass.swift */; };
+		F45828911F40893C0004E6FF /* Event+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F458288F1F40893C0004E6FF /* Event+CoreDataProperties.swift */; };
+		F45828961F408AAE0004E6FF /* SavedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45828921F408AAE0004E6FF /* SavedView.swift */; };
+		F45828971F408AAE0004E6FF /* PurchaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45828931F408AAE0004E6FF /* PurchaseCell.swift */; };
+		F45828981F408AAE0004E6FF /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45828941F408AAE0004E6FF /* TextFieldView.swift */; };
+		F45828991F408AAE0004E6FF /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45828951F408AAE0004E6FF /* MaterialView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F458286F1F4087360004E6FF /* Purchases@ERP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Purchases@ERP.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F45828721F4087360004E6FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F45828751F4087360004E6FF /* Purchases_ERP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Purchases_ERP.xcdatamodel; sourceTree = "<group>"; };
+		F45828771F4087360004E6FF /* MasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		F45828791F4087360004E6FF /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		F458287C1F4087360004E6FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F458287E1F4087360004E6FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F45828811F4087360004E6FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F45828831F4087360004E6FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F45828891F4087660004E6FF /* Purchases@ERP.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Purchases@ERP.entitlements"; sourceTree = "<group>"; };
+		F458288E1F40893C0004E6FF /* Event+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F458288F1F40893C0004E6FF /* Event+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Event+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		F45828921F408AAE0004E6FF /* SavedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedView.swift; sourceTree = "<group>"; };
+		F45828931F408AAE0004E6FF /* PurchaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PurchaseCell.swift; sourceTree = "<group>"; };
+		F45828941F408AAE0004E6FF /* TextFieldView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
+		F45828951F408AAE0004E6FF /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F458286C1F4087360004E6FF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F45828661F4087360004E6FF = {
+			isa = PBXGroup;
+			children = (
+				F45828711F4087360004E6FF /* Purchases@ERP */,
+				F45828701F4087360004E6FF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F45828701F4087360004E6FF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F458286F1F4087360004E6FF /* Purchases@ERP.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F45828711F4087360004E6FF /* Purchases@ERP */ = {
+			isa = PBXGroup;
+			children = (
+				F458288C1F40877C0004E6FF /* Model */,
+				F458288B1F4087790004E6FF /* View */,
+				F458288A1F4087760004E6FF /* Controller */,
+				F45828721F4087360004E6FF /* AppDelegate.swift */,
+				F458287B1F4087360004E6FF /* Main.storyboard */,
+				F45828801F4087360004E6FF /* LaunchScreen.storyboard */,
+				F45828831F4087360004E6FF /* Info.plist */,
+				F458287E1F4087360004E6FF /* Assets.xcassets */,
+				F45828741F4087360004E6FF /* Purchases_ERP.xcdatamodeld */,
+				F45828891F4087660004E6FF /* Purchases@ERP.entitlements */,
+			);
+			path = "Purchases@ERP";
+			sourceTree = "<group>";
+		};
+		F458288A1F4087760004E6FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F45828771F4087360004E6FF /* MasterViewController.swift */,
+				F45828791F4087360004E6FF /* DetailViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		F458288B1F4087790004E6FF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F45828921F408AAE0004E6FF /* SavedView.swift */,
+				F45828931F408AAE0004E6FF /* PurchaseCell.swift */,
+				F45828941F408AAE0004E6FF /* TextFieldView.swift */,
+				F45828951F408AAE0004E6FF /* MaterialView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F458288C1F40877C0004E6FF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F458288E1F40893C0004E6FF /* Event+CoreDataClass.swift */,
+				F458288D1F4087800004E6FF /* Generated */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F458288D1F4087800004E6FF /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				F458288F1F40893C0004E6FF /* Event+CoreDataProperties.swift */,
+			);
+			name = Generated;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F458286E1F4087360004E6FF /* Purchases@ERP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F45828861F4087360004E6FF /* Build configuration list for PBXNativeTarget "Purchases@ERP" */;
+			buildPhases = (
+				F458286B1F4087360004E6FF /* Sources */,
+				F458286C1F4087360004E6FF /* Frameworks */,
+				F458286D1F4087360004E6FF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Purchases@ERP";
+			productName = "Purchases@ERP";
+			productReference = F458286F1F4087360004E6FF /* Purchases@ERP.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F45828671F4087360004E6FF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Fotios Tragopoulos";
+				TargetAttributes = {
+					F458286E1F4087360004E6FF = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = KUPZ8W8CSU;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F458286A1F4087360004E6FF /* Build configuration list for PBXProject "Purchases@ERP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F45828661F4087360004E6FF;
+			productRefGroup = F45828701F4087360004E6FF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F458286E1F4087360004E6FF /* Purchases@ERP */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F458286D1F4087360004E6FF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45828821F4087360004E6FF /* LaunchScreen.storyboard in Resources */,
+				F458287F1F4087360004E6FF /* Assets.xcassets in Resources */,
+				F458287D1F4087360004E6FF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F458286B1F4087360004E6FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45828971F408AAE0004E6FF /* PurchaseCell.swift in Sources */,
+				F45828911F40893C0004E6FF /* Event+CoreDataProperties.swift in Sources */,
+				F45828761F4087360004E6FF /* Purchases_ERP.xcdatamodeld in Sources */,
+				F45828731F4087360004E6FF /* AppDelegate.swift in Sources */,
+				F45828961F408AAE0004E6FF /* SavedView.swift in Sources */,
+				F45828901F40893C0004E6FF /* Event+CoreDataClass.swift in Sources */,
+				F45828781F4087360004E6FF /* MasterViewController.swift in Sources */,
+				F45828991F408AAE0004E6FF /* MaterialView.swift in Sources */,
+				F458287A1F4087360004E6FF /* DetailViewController.swift in Sources */,
+				F45828981F408AAE0004E6FF /* TextFieldView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F458287B1F4087360004E6FF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F458287C1F4087360004E6FF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F45828801F4087360004E6FF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45828811F4087360004E6FF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F45828841F4087360004E6FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F45828851F4087360004E6FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F45828871F4087360004E6FF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Purchases@ERP/Purchases@ERP.entitlements";
+				DEVELOPMENT_TEAM = KUPZ8W8CSU;
+				INFOPLIST_FILE = "Purchases@ERP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fotiostragopoulos.myds.me.Purchases-ERP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F45828881F4087360004E6FF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Purchases@ERP/Purchases@ERP.entitlements";
+				DEVELOPMENT_TEAM = KUPZ8W8CSU;
+				INFOPLIST_FILE = "Purchases@ERP/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "fotiostragopoulos.myds.me.Purchases-ERP";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F458286A1F4087360004E6FF /* Build configuration list for PBXProject "Purchases@ERP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45828841F4087360004E6FF /* Debug */,
+				F45828851F4087360004E6FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F45828861F4087360004E6FF /* Build configuration list for PBXNativeTarget "Purchases@ERP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F45828871F4087360004E6FF /* Debug */,
+				F45828881F4087360004E6FF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F45828741F4087360004E6FF /* Purchases_ERP.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F45828751F4087360004E6FF /* Purchases_ERP.xcdatamodel */,
+			);
+			currentVersion = F45828751F4087360004E6FF /* Purchases_ERP.xcdatamodel */;
+			path = Purchases_ERP.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F45828671F4087360004E6FF /* Project object */;
+}
